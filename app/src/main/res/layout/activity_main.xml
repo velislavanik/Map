@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:layout_above="@id/getLocationBtn"
+        android:layout_marginBottom="18dp"
+        android:layout_centerHorizontal="true"
+
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/getLocationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/openMap"
+        android:text="Get Location" />
+
+    <Button
+        android:id="@+id/openMap"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_height="wrap_content"
+        android:text=" Click to view the map"
+        android:onClick="getMap"/>
+    <Button
+        android:id="@+id/sentMyLocation"
+        android:layout_below="@id/openMap"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Send location via email"
+        android:onClick="sendEmail"/>
+
+</RelativeLayout>
